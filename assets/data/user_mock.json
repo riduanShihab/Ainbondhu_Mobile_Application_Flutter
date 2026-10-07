@@ -1,0 +1,8 @@
+{
+  "id": 101,
+  "name": "Jannat",
+  "email": "test@lawbuddy.com",
+  "password": "password123",
+  "phone": "01700000000",
+  "token": "lawbuddy_secure_token_abc123"
+}
