@@ -82,7 +82,7 @@ class ServiceSearchScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(color: Colors.grey.shade200),
                     boxShadow: [
-                      BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 10, offset: const Offset(0, 5))
+                      BoxShadow(color: Colors.black.withValues(alpha: 0.05), blurRadius: 10, offset: const Offset(0, 5))
                     ]
                 ),
                 child: Column(
@@ -175,7 +175,7 @@ class ServiceSearchScreen extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 16),
       padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.green.withOpacity(0.3), width: 1), boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.03), blurRadius: 4, offset: Offset(0,2))]),
+      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.green.withValues(alpha: 0.3), width: 1), boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.03), blurRadius: 4, offset: const Offset(0, 2))]),
       child: Column(
         children: [
           Row(crossAxisAlignment: CrossAxisAlignment.start, children: [ClipRRect(borderRadius: BorderRadius.circular(8), child: Image.asset('assets/images/lawyer_image.jpg', width: 60, height: 60, fit: BoxFit.cover)), const SizedBox(width: 12), Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [Text(lawyer.name, style: GoogleFonts.anekBangla(fontSize: 16, fontWeight: FontWeight.bold)), Row(children: [const Icon(Icons.star, color: Colors.amber, size: 16), Text(" ${lawyer.rating}", style: GoogleFonts.anekBangla(fontWeight: FontWeight.bold, fontSize: 12))])]), Text(lawyer.role, style: GoogleFonts.anekBangla(fontSize: 12, color: Colors.amber[800])), Text(lawyer.cases, style: GoogleFonts.anekBangla(fontSize: 10, color: Colors.black)), Text('এই খানে description এর টেক্সট টা অ্যাড হবে', style: GoogleFonts.anekBangla(fontSize: 10, color: Colors.grey))]))]),

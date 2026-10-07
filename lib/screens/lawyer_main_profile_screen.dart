@@ -105,14 +105,14 @@ class LawyerSideProfileScreen extends StatelessWidget {
                     Text(
                       "অভিজ্ঞ আইনজীবী",
                       style: GoogleFonts.anekBangla(
-                        color: AppColors.white.withOpacity(0.8),
+                        color: AppColors.white.withValues(alpha: 0.8),
                         fontSize: 15,
                       ),
                     ),
                     Text(
                       "বার কাউন্সিল নং: ৭৮৬০৯২",
                       style: GoogleFonts.anekBangla(
-                        color: AppColors.white.withOpacity(0.6),
+                        color: AppColors.white.withValues(alpha: 0.6),
                         fontSize: 13,
                       ),
                     ),
@@ -146,7 +146,7 @@ class LawyerSideProfileScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(35),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
           )
         ],
@@ -166,7 +166,7 @@ class LawyerSideProfileScreen extends StatelessWidget {
                 () => Switch(
               value: userController.isLawyerMode.value,
               onChanged: (v) => userController.toggleMode(v),
-              activeColor: AppColors.green,
+              activeThumbColor: AppColors.green,
             ),
           ),
         ],
@@ -182,7 +182,7 @@ class LawyerSideProfileScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
           )
         ],
@@ -203,7 +203,7 @@ class LawyerSideProfileScreen extends StatelessWidget {
   Widget _vDivider() => Container(
     height: 30,
     width: 1,
-    color: AppColors.borderGrey.withOpacity(0.5),
+    color: AppColors.borderGrey.withValues(alpha: 0.5),
   );
 
   Widget _statCol(String v, String l, {bool isRating = false}) => Column(
@@ -303,7 +303,7 @@ class LawyerSideProfileScreen extends StatelessWidget {
                     padding:
                     const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                     decoration: BoxDecoration(
-                      color: AppColors.green.withOpacity(0.15),
+                      color: AppColors.green.withValues(alpha: 0.15),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(

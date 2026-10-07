@@ -203,7 +203,7 @@ class LawyerServiceRequestsScreen extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
         border: status == 'প্রত্যাখ্যাত'
-            ? Border.all(color: Colors.red.withOpacity(0.3), width: 1)
+            ? Border.all(color: Colors.red.withValues(alpha: 0.3), width: 1)
             : null,
       ),
       child: Column(
@@ -340,9 +340,9 @@ class LawyerServiceRequestsScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
             decoration: BoxDecoration(
-              color: statusColor.withOpacity(0.1),
+              color: statusColor.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: statusColor.withOpacity(0.5)),
+              border: Border.all(color: statusColor.withValues(alpha: 0.5)),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,

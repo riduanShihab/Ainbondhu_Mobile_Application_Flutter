@@ -50,7 +50,7 @@ class MainLayout extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.menu, color: Colors.black),
-            onPressed: () => print("Menu Clicked"),
+            onPressed: () => debugPrint("Menu Clicked"),
           ),
         ],
       ),

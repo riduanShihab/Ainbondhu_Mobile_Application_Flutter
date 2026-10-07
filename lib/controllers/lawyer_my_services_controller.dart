@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 class LawyerMyServicesController extends GetxController {
@@ -29,6 +30,6 @@ class LawyerMyServicesController extends GetxController {
   ].obs;
 
   void viewDetails(int index) {
-    print("View details for ${services[index]['title']}");
+    debugPrint("View details for ${services[index]['title']}");
   }
 }

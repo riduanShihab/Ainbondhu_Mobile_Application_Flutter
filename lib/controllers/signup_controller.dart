@@ -30,6 +30,7 @@ class SignUpController extends GetxController {
         emailOrPhone: emailPhoneController.text.trim(),
         password: passwordController.text,
       );
+      debugPrint("Signing up: ${request.name}");
 
       await Future.delayed(const Duration(seconds: 1)); // Simulate delay
 

@@ -5,6 +5,8 @@ import '../controllers/payment_controller.dart';
 import '../utils/app_colors.dart';
 
 class PaymentHistoryScreen extends StatelessWidget {
+  PaymentHistoryScreen({super.key});
+
   final PaymentController controller = Get.find<PaymentController>();
 
   @override

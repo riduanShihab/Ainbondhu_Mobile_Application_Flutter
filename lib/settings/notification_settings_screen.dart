@@ -39,7 +39,7 @@ class NotificationSettingsScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.05),
+                color: Colors.black.withValues(alpha: 0.05),
                 blurRadius: 10,
                 offset: const Offset(0, 4),
               ),
@@ -154,8 +154,8 @@ class NotificationSettingsScreen extends StatelessWidget {
                 () => Switch(
               value: value.value,
               onChanged: onChanged,
-              activeColor: AppColors.green,
-              activeTrackColor: AppColors.green.withOpacity(0.2),
+              activeThumbColor: AppColors.green,
+              activeTrackColor: AppColors.green.withValues(alpha: 0.2),
             ),
           ),
         ],

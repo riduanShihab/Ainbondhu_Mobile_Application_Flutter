@@ -36,7 +36,7 @@ class ServiceDetailScreen extends StatelessWidget {
                 style: GoogleFonts.anekBangla(color: AppColors.white, fontSize: 16, fontWeight: FontWeight.bold)
             ),
             Text('চুক্তিপত্র তৈরি - ব্যবসায়িক চুক্তি',
-                style: GoogleFonts.anekBangla(color: AppColors.white.withOpacity(0.7), fontSize: 12, fontWeight: FontWeight.w300)
+                style: GoogleFonts.anekBangla(color: AppColors.white.withValues(alpha: 0.7), fontSize: 12, fontWeight: FontWeight.w300)
             ),
           ],
         ),
@@ -253,7 +253,7 @@ class ServiceDetailScreen extends StatelessWidget {
           onTap: () => controller.changePackage(index),
           child: Container(
             alignment: Alignment.center,
-            color: isSelected ? AppColors.green.withOpacity(0.1) : AppColors.white,
+            color: isSelected ? AppColors.green.withValues(alpha: 0.1) : AppColors.white,
             child: Text(
               title,
               style: GoogleFonts.anekBangla(
@@ -272,7 +272,7 @@ class ServiceDetailScreen extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 12),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        border: Border.all(color: AppColors.green.withOpacity(0.5)),
+        border: Border.all(color: AppColors.green.withValues(alpha: 0.5)),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Column(

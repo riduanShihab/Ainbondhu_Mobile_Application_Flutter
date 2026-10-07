@@ -1,4 +1,3 @@
-import 'package:ain_bondhu_app/screens/splash_screen.dart';
 import 'package:ain_bondhu_app/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

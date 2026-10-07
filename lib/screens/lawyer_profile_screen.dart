@@ -87,7 +87,7 @@ class _LawyerProfileScreenState extends State<LawyerProfileScreen> {
         padding: EdgeInsets.all(w * 0.04),
         decoration: BoxDecoration(
           color: AppColors.white,
-          border: Border(top: BorderSide(color: AppColors.borderGrey.withOpacity(0.5))),
+          border: Border(top: BorderSide(color: AppColors.borderGrey.withValues(alpha: 0.5))),
         ),
         child: ElevatedButton(
           onPressed: () {
@@ -221,7 +221,7 @@ class _LawyerProfileScreenState extends State<LawyerProfileScreen> {
   Widget _buildAwardItem(String y, String t, String o, double w) => Container(
       margin: EdgeInsets.symmetric(horizontal: w * 0.04, vertical: 5),
       padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(color: AppColors.inputBackground.withOpacity(0.5), borderRadius: BorderRadius.circular(10)),
+      decoration: BoxDecoration(color: AppColors.inputBackground.withValues(alpha: 0.5), borderRadius: BorderRadius.circular(10)),
       child: Row(children: [
         Container(padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5), decoration: BoxDecoration(color: AppColors.green, borderRadius: BorderRadius.circular(5)), child: Text(y, style: TextStyle(color: AppColors.white, fontWeight: FontWeight.bold, fontSize: w * 0.03))),
         SizedBox(width: w * 0.04),

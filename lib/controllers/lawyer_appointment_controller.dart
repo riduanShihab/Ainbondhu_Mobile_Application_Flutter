@@ -1,8 +1,4 @@
-import 'package:ain_bondhu_app/models/lawyer_model.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
-
-
 import '../models/lawyer_side_model.dart';
 
 class LawyerAppointmentController extends GetxController {

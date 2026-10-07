@@ -166,8 +166,8 @@ class HomeScreen extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: const Color(0xFF2E7D32).withOpacity(
-                    controller.currentSliderIndex.value == entry.key ? 0.9 : 0.2,
+                  color: const Color(0xFF2E7D32).withValues(
+                    alpha: controller.currentSliderIndex.value == entry.key ? 0.9 : 0.2,
                   ),
                 ),
               );
@@ -211,7 +211,7 @@ class HomeScreen extends StatelessWidget {
                   data['subtitle'],
                   style: GoogleFonts.anekBangla(
                     fontSize: 14,
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withValues(alpha: 0.9),
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -391,7 +391,7 @@ class HomeScreen extends StatelessWidget {
                         right: 0,
                         child: Container(
                           padding: const EdgeInsets.all(9.0),
-                          color: Colors.white.withOpacity(0.9),
+                          color: Colors.white.withValues(alpha: 0.9),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [

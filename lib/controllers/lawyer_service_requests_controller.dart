@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 class LawyerServiceRequestsController extends GetxController {
@@ -57,14 +58,14 @@ class LawyerServiceRequestsController extends GetxController {
   }
 
   void acceptRequest(String id) {
-    print('Accept request $id');
+    debugPrint('Accept request $id');
   }
 
   void rejectRequest(String id) {
-    print('Reject request $id');
+    debugPrint('Reject request $id');
   }
 
   void completeService(String id) {
-    print('Complete service $id');
+    debugPrint('Complete service $id');
   }
 }

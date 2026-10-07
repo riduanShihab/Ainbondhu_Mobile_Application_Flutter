@@ -40,7 +40,7 @@ class ServiceBookingScreen extends StatelessWidget {
           children: [
             Text('সেবা', style: GoogleFonts.anekBangla(color: AppColors.white, fontSize: 16, fontWeight: FontWeight.bold)),
             Text('চুক্তিপত্র তৈরি - ব্যবসায়িক চুক্তি',
-                style: GoogleFonts.anekBangla(color: AppColors.white.withOpacity(0.7), fontSize: 12)),
+                style: GoogleFonts.anekBangla(color: AppColors.white.withValues(alpha: 0.7), fontSize: 12)),
           ],
         ),
       ),
@@ -176,7 +176,7 @@ class ServiceBookingScreen extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: AppColors.golden.withOpacity(0.1),
+            color: AppColors.golden.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(8),
           ),
           child: Text(
@@ -228,7 +228,7 @@ class ServiceBookingScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
-              color: AppColors.green.withOpacity(0.1),
+              color: AppColors.green.withValues(alpha: 0.1),
               shape: BoxShape.circle,
               border: Border.all(color: AppColors.green, width: 1),
             ),
@@ -240,7 +240,7 @@ class ServiceBookingScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
-              color: AppColors.primaryBlue.withOpacity(0.1),
+              color: AppColors.primaryBlue.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Column(
@@ -300,7 +300,7 @@ class ServiceBookingScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.green.withOpacity(0.1),
+        color: AppColors.green.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Column(

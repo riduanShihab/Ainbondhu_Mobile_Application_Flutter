@@ -64,7 +64,7 @@ class UserProfileScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: h * 0.065,
-                    backgroundColor: AppColors.white.withOpacity(0.2),
+                    backgroundColor: AppColors.white.withValues(alpha: 0.2),
                     child: CircleAvatar(
                       radius: h * 0.06,
                       // Accessing via .value.image (Model approach)
@@ -122,7 +122,7 @@ class UserProfileScreen extends StatelessWidget {
           color: AppColors.white,
           borderRadius: BorderRadius.circular(35),
           boxShadow: [BoxShadow(
-              color: Colors.black.withOpacity(0.1),
+              color: Colors.black.withValues(alpha: 0.1),
               blurRadius: 10,
               offset: const Offset(0, 4)
           )]
@@ -139,7 +139,7 @@ class UserProfileScreen extends StatelessWidget {
           Obx(() => Switch(
             value: controller.isLawyerMode.value,
             onChanged: (v) => controller.toggleMode(v),
-            activeColor: AppColors.green,
+            activeThumbColor: AppColors.green,
           )),
         ],
       ),
@@ -153,7 +153,7 @@ class UserProfileScreen extends StatelessWidget {
           color: AppColors.white,
           borderRadius: BorderRadius.circular(15),
           boxShadow: [BoxShadow(
-              color: Colors.black.withOpacity(0.08),
+              color: Colors.black.withValues(alpha: 0.08),
               blurRadius: 15,
               offset: const Offset(0, 5)
           )]
@@ -171,7 +171,7 @@ class UserProfileScreen extends StatelessWidget {
     );
   }
 
-  Widget _vDivider() => Container(height: 30, width: 1, color: AppColors.borderGrey.withOpacity(0.5));
+  Widget _vDivider() => Container(height: 30, width: 1, color: AppColors.borderGrey.withValues(alpha: 0.5));
 
   Widget _statCol(String v, String l) => Column(
       children: [
@@ -193,7 +193,7 @@ class UserProfileScreen extends StatelessWidget {
               onTap: () => Get.toNamed(AppRoutes.editProfile)),
 
           _tile(Icons.add_circle_outline, "নতুন অ্যাপয়েন্টমেন্ট", "নতুন অ্যাপয়েন্টমেন্ট নিন",
-              onTap: () => Get.toNamed(AppRoutes.lawyer_search)),
+              onTap: () => Get.toNamed(AppRoutes.lawyerSearch)),
 
           _tile(Icons.history, "অনুরোধকৃত অ্যাপয়েন্টমেন্ট", "৩টি অনুরোধ",
               onTap: () => Get.toNamed(AppRoutes.requestedAppointments)),
@@ -254,7 +254,7 @@ class UserProfileScreen extends StatelessWidget {
   Widget _buildLogoutButton(double w) => Padding(
     padding: EdgeInsets.symmetric(horizontal: w * 0.04),
     child: Container(
-      decoration: BoxDecoration(color: AppColors.textRed.withOpacity(0.05), borderRadius: BorderRadius.circular(12)),
+      decoration: BoxDecoration(color: AppColors.textRed.withValues(alpha: 0.05), borderRadius: BorderRadius.circular(12)),
       child: ListTile(
         onTap: () => controller.logout(),
         leading: const Icon(Icons.logout, color: AppColors.textRed),

@@ -331,48 +331,6 @@ class LawyerHomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildNavItem(
-      LawyerHomeController controller,
-      int index,
-      IconData outlineIcon,
-      IconData filledIcon,
-      String label,
-      ) {
-    bool isSelected = controller.selectedIndex.value == index;
-    return GestureDetector(
-      onTap: () => controller.changeTabIndex(index),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            isSelected ? filledIcon : outlineIcon,
-            color: isSelected ? AppColors.green : Colors.black87,
-            size: Get.width * 0.065 > 28 ? 28 : Get.width * 0.065,
-          ),
-          SizedBox(height: Get.height * 0.005),
-          Container(
-            padding: EdgeInsets.symmetric(
-              horizontal: Get.width * 0.03,
-              vertical: Get.height * 0.005,
-            ),
-            decoration: BoxDecoration(
-              color: isSelected ? AppColors.green : Colors.transparent,
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Text(
-              label,
-              style: TextStyle(
-                color: isSelected ? Colors.white : Colors.black87,
-                fontSize: Get.width * 0.03 > 12 ? 12 : Get.width * 0.03,
-                fontWeight: isSelected ? FontWeight.w500 : FontWeight.normal,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
   Widget _buildBar({required double height, bool isActive = false}) {
     return Container(
       width: Get.width * 0.08,
@@ -625,7 +583,7 @@ class LawyerHomeScreen extends StatelessWidget {
                         vertical: 2,
                       ),
                       decoration: BoxDecoration(
-                        color: color.withOpacity(0.1),
+                        color: color.withValues(alpha: 0.1),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Text(
@@ -776,14 +734,6 @@ class LawyerHomeScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildDrawerItem(IconData icon, String title) {
-    return ListTile(
-      leading: Icon(icon, color: Colors.black87),
-      title: Text(title, style: const TextStyle(color: Colors.black87)),
-      onTap: () {},
     );
   }
 }

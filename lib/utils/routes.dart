@@ -5,7 +5,7 @@ import '../controllers/professional_profile_controller.dart';
 import '../controllers/settings_controller.dart';
 import '../screens/appointment_detail_screen.dart';
 import '../screens/lawyer_main_profile_screen.dart';
-import '../screens/lawyer_profile_screen.dart' hide LawyerSideProfileScreen;
+import '../screens/lawyer_profile_screen.dart';
 import '../screens/payment_history.dart';
 import '../screens/professional_profile_screen.dart';
 import '../screens/profile_edit_screen.dart';
@@ -38,7 +38,7 @@ class AppRoutes {
   static const String login = '/login';
   static const String signup = '/signup';
   static const String home = '/home';
-  static const String lawyer_search = '/lawyer_search';
+  static const String lawyerSearch = '/lawyer_search';
   static const String serviceSearch = '/service-search';
   static const String consultation = '/consultation';
   static const String requestedAppointments = '/requested-appointments';
@@ -82,7 +82,7 @@ class AppRoutes {
       page: () => const RequestedAppointmentDetailsScreen(),
       transition: Transition.rightToLeft,
     ),
-    GetPage(name: lawyer_search, page: () => LawyerSearchScreen()),
+    GetPage(name: lawyerSearch, page: () => LawyerSearchScreen()),
     GetPage(name: serviceSearch, page: () => ServiceSearchScreen()),
     GetPage(name: consultation, page: () => ConsultationScreen()),
     GetPage(name: requestedAppointments, page: () => RequestedAppointmentsScreen()),

@@ -254,7 +254,7 @@ class LawyerAppointmentScreen extends StatelessWidget {
                     vertical: Get.height * 0.004,
                   ),
                   decoration: BoxDecoration(
-                    color: AppColors.green.withOpacity(0.1),
+                    color: AppColors.green.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(

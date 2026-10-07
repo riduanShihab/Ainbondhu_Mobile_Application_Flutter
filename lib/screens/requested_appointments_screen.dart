@@ -50,7 +50,7 @@ class RequestedAppointmentsScreen extends StatelessWidget {
                 Text(
                   'আপনার মুলতুবি অ্যাপয়েন্টমেন্ট অনুরোধ',
                   style: GoogleFonts.anekBangla(
-                    color: AppColors.white.withOpacity(0.9),
+                    color: AppColors.white.withValues(alpha: 0.9),
                     fontSize: 14,
                   ),
                 ),

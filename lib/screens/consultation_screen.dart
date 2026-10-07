@@ -93,7 +93,7 @@ class ConsultationScreen extends StatelessWidget {
                       icon: Icon(Icons.keyboard_arrow_down, color: AppColors.textGrey, size: w * 0.06),
                       hint: Text('আইনজীবী নির্বাচন করুন',
                           style: GoogleFonts.anekBangla(color: AppColors.textGrey, fontSize: w * 0.035)),
-                      value: controller.selectedLawyer.value,
+                      initialValue: controller.selectedLawyer.value,
                       items: controller.lawyers.map((String value) {
                         return DropdownMenuItem<String>(
                           value: value,
@@ -168,7 +168,7 @@ class ConsultationScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.white,
         borderRadius: BorderRadius.circular(w * 0.04),
-        border: Border.all(color: AppColors.borderGrey.withOpacity(0.5)),
+        border: Border.all(color: AppColors.borderGrey.withValues(alpha: 0.5)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -210,7 +210,7 @@ class ConsultationScreen extends StatelessWidget {
     return InputDecoration(
       hintText: hint,
       hintStyle: GoogleFonts.anekBangla(
-          color: AppColors.textGrey.withOpacity(0.7), fontSize: w * 0.035),
+          color: AppColors.textGrey.withValues(alpha: 0.7), fontSize: w * 0.035),
       filled: true,
       fillColor: AppColors.inputBackground,
       border: OutlineInputBorder(

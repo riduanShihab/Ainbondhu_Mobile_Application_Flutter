@@ -70,7 +70,7 @@ class UserProfileController extends GetxController {
       title: "নতুন অ্যাপয়েন্টমেন্ট",
       subtitle: "নতুন অ্যাপয়েন্টমেন্ট নিন",
       icon: Icons.add,
-      route: AppRoutes.lawyer_search,
+      route: AppRoutes.lawyerSearch,
     ),
     ProfileMenuItemModel(
       title: "সেবা দেখুন",
